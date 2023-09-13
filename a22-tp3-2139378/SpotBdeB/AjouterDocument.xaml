@@ -1,0 +1,56 @@
+﻿<Window x:Class="SpotBdeB.AjouterDocument"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpotBdeB"
+        mc:Ignorable="d"
+        Title="AjouterDocument" Height="160" 
+        Width="280"
+        ResizeMode="NoResize">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:AjouterDocument.AnnulerOperationCommand}"
+                        CanExecute="AnnulerOperationCommand_CanExecute"
+                        Executed="AnnulerOperationCommand_Executed"/>
+        <CommandBinding Command="{x:Static local:AjouterDocument.SelectionnerCommand}"
+                        CanExecute="SelectionnerCommand_CanExecute"
+                        Executed="SelectionnerCommand_Executed"/>
+    </Window.CommandBindings>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <WrapPanel Grid.Row="0"
+                   Margin="5">
+                <Label Content="Titre  :"/>
+                <TextBox Margin="5"
+                     Width="140"
+                     x:Name="InputNom"/>
+            </WrapPanel>
+            <WrapPanel Grid.Row="0" Margin="5">
+                <Label Content="Artiste  :"/>
+                <TextBox Margin="5"
+                     Width="140"
+                     x:Name="InputArtiste"/>
+            </WrapPanel>
+            <WrapPanel Grid.Row="1"
+                   HorizontalAlignment="Center"
+                   Margin="5">
+                <Button Content="Selectionner"
+                    Margin="5"
+                    Width="100"
+                    Command="{x:Static local:AjouterDocument.SelectionnerCommand}"
+                    />
+                <Button Content="Annuler"
+                    Command="{x:Static local:AjouterDocument.AnnulerOperationCommand}"
+                    Margin="5"
+                    Width="100"/>
+            </WrapPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>

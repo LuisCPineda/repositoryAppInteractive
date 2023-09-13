@@ -1,0 +1,64 @@
+﻿<Window x:Class="SpotBdeB.FenetreModification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpotBdeB"
+        mc:Ignorable="d"
+        Title="FenetreModification" 
+        Height="450"
+        Width="800"
+        ResizeMode="CanMinimize">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:FenetreModification.PasserPieceCommand}"
+                        CanExecute="PasserPieceCommand_CanExecute"
+                        Executed="PasserPieceCommand_Executed"/>
+        <CommandBinding Command="{x:Static local:FenetreModification.EnleverCommand}"
+                        CanExecute="EnleverCommand_CanExecute"
+                        Executed="EnleverCommand_Executed"/>
+        <CommandBinding Command="{x:Static local:FenetreModification.ConfirmerCommand}"
+                        CanExecute="ConfirmerCommand_CanExecute"
+                        Executed="ConfirmerCommand_Executed"/>
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="350"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0"
+                    Grid.Column="0">
+            <TextBlock Text="Documents audios disponible:"/>
+            <ListBox x:Name="ListBoxDocuDispo"
+                     ItemsSource="{Binding ToutesLesPieces}"
+                     Height="400"
+                     Width="330" />
+        </StackPanel>
+        <StackPanel Grid.Row="0"
+                    Grid.Column="1">
+            <Button x:Name="PasserPiece"
+                    Content=">>>>>"
+                    Width="90"
+                    Margin="0,20,0,0"
+                    Command="{x:Static local:FenetreModification.PasserPieceCommand}"/>
+            <Button x:Name="EnleverPiece"
+                    Content="&lt;&lt;&lt;&lt;&lt;"
+                    Width="90"
+                    Margin="0,150,0,0"
+                    Command="{x:Static local:FenetreModification.EnleverCommand}"/>
+            <Button x:Name="ConfirmerChangement"
+                    Content="Confirmer"
+                    Width="90"
+                    Margin="0,180,0,0"
+                    Command="{x:Static local:FenetreModification.ConfirmerCommand}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0"
+                    Grid.Column="2">
+            <TextBlock Text="{Binding NomPlayListCourante}"/>
+            <ListBox x:Name="ListBoxPlaylist"
+                     ItemsSource="{Binding PieceDansPlaylist}"
+                     Height="400"
+                     Width="330"/>   
+        </StackPanel>
+    </Grid>
+</Window>

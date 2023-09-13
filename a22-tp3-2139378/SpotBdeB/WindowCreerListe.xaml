@@ -1,0 +1,49 @@
+﻿<Window x:Class="SpotBdeB.WindowCreerListe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpotBdeB"
+        mc:Ignorable="d"
+        Title="Créer une nouvelle liste"
+        Height="140" 
+        Width="280"
+        ResizeMode="NoResize">
+
+    <Window.CommandBindings>
+
+        <CommandBinding Command="{x:Static local:WindowCreerListe.AnnulerOperationCommand}" 
+                       Executed="AnnulerOperationCommand_Executed" 
+                       CanExecute="AnnulerOperationCommand_CanExecute"/>
+        <CommandBinding Command="{x:Static local:WindowCreerListe.CreerListeCommand}"
+                        Executed="CreerListeCommand_Executed"
+                        CanExecute="CreerListeCommand_CanExecute"/>
+
+    </Window.CommandBindings>
+
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Row="0"
+                   Margin="5">
+            <Label Content="Nom de la liste :"/>
+            <TextBox Margin="5"
+                     Width="140"
+                     x:Name="InputNomListe"/>
+        </WrapPanel>
+        <WrapPanel Grid.Row="1"
+                   HorizontalAlignment="Center"
+                   Margin="5">
+            <Button Content="Créer"
+                    Margin="5"
+                    Width="100"
+                    Command="{x:Static local:WindowCreerListe.CreerListeCommand}"/>
+            <Button Content="Annuler"
+                    Command="{x:Static local:WindowCreerListe.AnnulerOperationCommand}"
+                    Margin="5"
+                    Width="100"/>
+        </WrapPanel>
+    </Grid>
+</Window>

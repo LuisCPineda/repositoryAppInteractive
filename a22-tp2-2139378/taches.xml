@@ -1,0 +1,103 @@
+<taches>
+  <tache creation="2022-10-31" debut="" fin="">
+    <description>Préparation du TP #3 de 420-3GP-BB (A2022)</description>
+    <etapes>
+      <etape termine="False" no="1">Décider sujet TP</etape>
+      <etape termine="False" no="2">Préparer données de travail</etape>
+      <etape termine="False" no="3">Faire design préliminaire de l'interface</etape>
+      <etape termine="False" no="4">Réaliser le code</etape>
+      <etape termine="False" no="5">Améliorer design interface</etape>
+      <etape termine="False" no="6">Créer template GitHub</etape>
+      <etape termine="False" no="7">Écrire énoncé de TP</etape>
+      <etape termine="False" no="8">Créer travail sur Lea</etape>
+      <etape termine="False" no="9">Présenter travail en classe</etape>
+    </etapes>
+  </tache>
+  <tache creation="2022-10-31" debut="" fin="">
+    <description>Correction du TP #2 de 420-3GP-BB (A2022)</description>
+    <etapes>
+      <etape termine="False" no="1">Faire la grille de correction</etape>
+      <etape termine="False" no="2">Récupérer travaux sur GitHub</etape>
+      <etape termine="False" no="3">Corriger 3 travaux</etape>
+      <etape termine="False" no="4">Réviser la grille de correction</etape>
+      <etape termine="False" no="5">Corriger 10 travaux</etape>
+      <etape termine="False" no="6">Corriger 10 travaux</etape>
+      <etape termine="False" no="7">Corriger 10 travaux</etape>
+      <etape termine="False" no="8">Corriger 10 travaux</etape>
+      <etape termine="False" no="9">Vérifier les notes</etape>
+      <etape termine="False" no="10">Inscrire notes dans Lea</etape>
+      <etape termine="False" no="11">Réviser la grille de correction</etape>
+      <etape termine="False" no="12">Transmettre la grille de correction</etape>
+    </etapes>
+  </tache>
+  <tache creation="2022-10-31" debut="" fin="">
+    <description>Correction du TP #3 de 420-3GP-BB (A2022)</description>
+    <etapes>
+      <etape termine="False" no="1">Faire la grille de correction</etape>
+      <etape termine="False" no="2">Récupérer travaux sur GitHub</etape>
+      <etape termine="False" no="3">Corriger 3 travaux</etape>
+      <etape termine="False" no="4">Réviser la grille de correction</etape>
+      <etape termine="False" no="5">Corriger 10 travaux</etape>
+      <etape termine="False" no="6">Corriger 10 travaux</etape>
+      <etape termine="False" no="7">Corriger 10 travaux</etape>
+      <etape termine="False" no="8">Corriger 10 travaux</etape>
+      <etape termine="False" no="9">Vérifier les notes</etape>
+      <etape termine="False" no="10">Inscrire notes dans Lea</etape>
+      <etape termine="False" no="11">Réviser la grille de correction</etape>
+      <etape termine="False" no="12">Transmettre la grille de correction</etape>
+    </etapes>
+  </tache>
+  <tache creation="2022-10-24" debut="2022-10-24" fin="">
+    <description>Correction du TP #1 de 420-3GP-BB (A2022)</description>
+    <etapes>
+      <etape termine="True" no="1">Faire la grille de correction</etape>
+      <etape termine="True" no="2">Récupérer travaux sur GitHub</etape>
+      <etape termine="False" no="3">Corriger 3 travaux</etape>
+      <etape termine="False" no="4">Réviser la grille de correction</etape>
+      <etape termine="False" no="5">Corriger 10 travaux</etape>
+      <etape termine="False" no="6">Corriger 10 travaux</etape>
+      <etape termine="False" no="7">Corriger 10 travaux</etape>
+      <etape termine="False" no="8">Corriger 10 travaux</etape>
+      <etape termine="False" no="9">Vérifier les notes</etape>
+      <etape termine="False" no="10">Inscrire notes dans Lea</etape>
+      <etape termine="False" no="11">Transmettre la grille de correction</etape>
+    </etapes>
+  </tache>
+  <tache creation="2022-10-26" debut="2022-10-27" fin="">
+    <description>Présentation pour sciences de la nature</description>
+    <etapes>
+      <etape termine="True" no="1">Trouver données</etape>
+      <etape termine="True" no="2">Revoir pymatplot</etape>
+      <etape termine="True" no="3">Développer exemple avec Jupyter Notebook</etape>
+      <etape termine="True" no="4">Validation du notebook en département</etape>
+      <etape termine="True" no="5">Modifications notebook suite aux remarques du département</etape>
+      <etape termine="False" no="6">Présentation au comité d'élaboration de sciences de la nature</etape>
+    </etapes>
+  </tache>
+  <tache creation="2022-10-26" debut="2022-10-28" fin="">
+    <description>Préparation du TP #2 de 420-3GP-BB (A2022)</description>
+    <etapes>
+      <etape termine="True" no="1">Décider sujet TP</etape>
+      <etape termine="True" no="2">Préparer données de travail</etape>
+      <etape termine="True" no="3">Faire design préliminaire de l'interface</etape>
+      <etape termine="True" no="4">Réaliser le code</etape>
+      <etape termine="True" no="5">Améliorer design interface</etape>
+      <etape termine="True" no="6">Créer template GitHub</etape>
+      <etape termine="True" no="7">Écrire énoncé de TP</etape>
+      <etape termine="True" no="8">Créer travail sur Lea</etape>
+      <etape termine="False" no="9">Présenter travail en classe</etape>
+    </etapes>
+  </tache>
+  <tache creation="2022-09-14" debut="2022-09-14" fin="2022-09-16">
+    <description>Préparation du TP #1 de 420-3GP-BB (A2022)</description>
+    <etapes>
+      <etape termine="True" no="1">Décider sujet TP</etape>
+      <etape termine="True" no="2">Déterminer le nombre de threads requis</etape>
+      <etape termine="True" no="3">Réaliser le code</etape>
+      <etape termine="True" no="4">Créer template GitHub</etape>
+      <etape termine="True" no="5">Écrire énoncé de TP</etape>
+      <etape termine="True" no="6">Créer travail sur Lea</etape>
+      <etape termine="True" no="7">Présenter travail en classe</etape>
+    </etapes>
+  </tache>
+</taches>
